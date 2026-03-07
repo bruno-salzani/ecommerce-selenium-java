@@ -1,0 +1,11 @@
+[
+  {
+    "email": "bruno.tester@mailinator.com",
+    "password": "Password123!",
+    "firstName": "Bruno",
+    "lastName": "Tester",
+    "address": "123 Test Street",
+    "city": "Test City",
+    "postcode": "12345"
+  }
+]

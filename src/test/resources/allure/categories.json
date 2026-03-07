@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Product Bugs",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*"
+  },
+  {
+    "name": "Automation Flakiness / Timeouts",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*TimeoutException.*"
+  },
+  {
+    "name": "Environment / Infrastructure Issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*WebDriverException.*"
+  },
+  {
+    "name": "Self-Healing Triggered (Review Locators)",
+    "matchedStatuses": ["passed", "failed", "broken"],
+    "messageRegex": ".*Self-Healing fallback.*"
+  }
+]
