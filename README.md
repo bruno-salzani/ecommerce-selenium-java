@@ -34,20 +34,6 @@ O projeto utiliza uma arquitetura de camadas moderna e robusta:
 4.  **Configuration Manager (OWNER):** Gestão centralizada e tipada de propriedades (Local, Grid, Docker).
 5.  **Self-Healing Engine:** Mecanismo na `BasePage` que recupera a execução em caso de falha de seletores primários.
 
-**Diagrama de Arquitetura:**
-
-```mermaid
-graph TD
-    A[Test Suite] -->|Dados| B[JSON/POJO]
-    A -->|Config| C[Owner Config]
-    A -->|Ações| D[Fluent Page Objects]
-    D -->|Reuso| E[Components]
-    D -->|Resiliência| F[BasePage (Self-Healing)]
-    A -->|Setup Rápido| G[API Client (Rest-Assured)]
-    F -->|Driver| H[DriverFactory (ThreadLocal)]
-    H -->|Execução| I[Docker/Grid/Local]
-```
-
 ---
 
 # � Fluxos Cobertos
